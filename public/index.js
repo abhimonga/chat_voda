@@ -13,7 +13,7 @@ function sendMsg(msg){
   append2(msg,"you");
 }
 function receiveMsg(msg2){
-    socket.on("r_msg",{data:msg2});
+    socket.on("r_msg",msg2);
     append2(msg2,"he");
 }
 function append2(text,sender){
