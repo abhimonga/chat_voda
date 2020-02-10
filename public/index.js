@@ -8,7 +8,7 @@ $(document).ready(function(){
 function sendMsg(msg){
     console.log("Trying");
 
-  socket.emit("s_msg",{data:msg});
+  socket.emit("s_msg",msg);
    console.log(msg);
   append2(msg,"you");
 }
