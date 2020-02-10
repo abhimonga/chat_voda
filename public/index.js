@@ -7,10 +7,10 @@ $(document).ready(function(){
   });
 function sendMsg(msg){
   socket.emit("s_msg",{data:msg});
-  append2(mess,"you");
+  append2(msg,"you");
 }
 function receiveMsg(msg2){
-    socket.on("r_msg",{data:msg});
+    socket.on("r_msg",{data:msg2});
     append2(msg2,"he");
 }
 function append2(text,sender){
