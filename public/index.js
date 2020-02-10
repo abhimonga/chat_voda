@@ -14,12 +14,10 @@ function sendMsg(msg){
   });
   append2(msg,"you");
 }
-function receiveMsg(msg2){
-    socket.on("r_msg",function(){
-      alert(msg2);
-    });
-    append2(msg2,"he");
-}
+socket.on("r_msg",function(){
+  alert(msg2);
+});
+append2(msg2,"he");
 function append2(text,sender){
     var toAppnd=`<div>${text}</div>
     <br><div>${sender}</div>`
