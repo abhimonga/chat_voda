@@ -19,5 +19,5 @@ function receiveMsg(msg2){
 function append2(text,sender){
     var toAppnd=`<div>${text}</div>
     <br><div>${sender}</div>`
-    $('#messages').append(toAppnd);
+    $('#messages').val(toAppnd);
 }
