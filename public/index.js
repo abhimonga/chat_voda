@@ -8,8 +8,8 @@ $(document).ready(function(){
 function sendMsg(msg){
     console.log("Trying");
 
-  socket.emit("s_msg",{data:msg});
-  console.log("Successful");
+  socket.emit("s_msg",{data:msg}).then( console.log("Successful"));
+ 
   append2(msg,"you");
 }
 function receiveMsg(msg2){
