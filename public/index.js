@@ -9,7 +9,7 @@ function sendMsg(msg){
     console.log("Trying");
 
   socket.emit("s_msg",{data:msg});
- 
+   console.log(data);
   append2(msg,"you");
 }
 function receiveMsg(msg2){
